@@ -1,0 +1,513 @@
+{"_e":"root:init","_t":1789603443316,"format":"v0-jsonl","version":"57.0.25"}
+{"_e":"env:mode","_t":1789603443317,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1789603443322,"mode":"development","files":["../..\\..\\.env"],"env":{"EXPO_PUBLIC_SPOONACULAR_API_KEY":"5d545a5a94a645159d80ea56babcaa0d"}}
+{"_e":"devserver:start","_t":1789603443707,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1789603444274,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1789603444920,"plugins":[]}
+{"_e":"metro:instantiate","_t":1789603450333,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1789603464049,"id":"3","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1789603464050,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789603464053,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789603464898,"id":"3","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1789603464998,"id":"3","progress":0.17899408284023668,"total":52,"current":22}
+{"_e":"metro:bundling:progress","_t":1789603465098,"id":"3","progress":0.4929832503395202,"total":94,"current":66}
+{"_e":"metro:bundling:progress","_t":1789603465198,"id":"3","progress":0.5810937919914001,"total":122,"current":93}
+{"_e":"metro:bundling:progress","_t":1789603465325,"id":"3","progress":0.5965364531694097,"total":123,"current":95}
+{"_e":"metro:bundling:progress","_t":1789603465425,"id":"3","progress":0.5965364531694097,"total":172,"current":99}
+{"_e":"metro:bundling:progress","_t":1789603465525,"id":"3","progress":0.5965364531694097,"total":174,"current":100}
+{"_e":"metro:bundling:progress","_t":1789603465629,"id":"3","progress":0.5965364531694097,"total":175,"current":102}
+{"_e":"metro:bundling:progress","_t":1789603465729,"id":"3","progress":0.5965364531694097,"total":175,"current":104}
+{"_e":"metro:bundling:progress","_t":1789603465847,"id":"3","progress":0.5965364531694097,"total":175,"current":106}
+{"_e":"metro:bundling:progress","_t":1789603465949,"id":"3","progress":0.5965364531694097,"total":179,"current":109}
+{"_e":"metro:bundling:progress","_t":1789603466061,"id":"3","progress":0.5965364531694097,"total":187,"current":110}
+{"_e":"metro:bundling:progress","_t":1789603466173,"id":"3","progress":0.5965364531694097,"total":204,"current":122}
+{"_e":"metro:bundling:progress","_t":1789603466275,"id":"3","progress":0.5965364531694097,"total":210,"current":128}
+{"_e":"metro:bundling:progress","_t":1789603466376,"id":"3","progress":0.5965364531694097,"total":212,"current":136}
+{"_e":"metro:bundling:progress","_t":1789603466477,"id":"3","progress":0.5965364531694097,"total":218,"current":140}
+{"_e":"metro:bundling:progress","_t":1789603466582,"id":"3","progress":0.5965364531694097,"total":253,"current":147}
+{"_e":"metro:bundling:progress","_t":1789603466688,"id":"3","progress":0.5965364531694097,"total":263,"current":158}
+{"_e":"metro:bundling:progress","_t":1789603466788,"id":"3","progress":0.5965364531694097,"total":346,"current":165}
+{"_e":"metro:bundling:progress","_t":1789603466904,"id":"3","progress":0.5965364531694097,"total":384,"current":177}
+{"_e":"metro:bundling:progress","_t":1789603467007,"id":"3","progress":0.5965364531694097,"total":430,"current":222}
+{"_e":"metro:bundling:progress","_t":1789603467107,"id":"3","progress":0.5965364531694097,"total":445,"current":251}
+{"_e":"metro:bundling:progress","_t":1789603467207,"id":"3","progress":0.5965364531694097,"total":499,"current":287}
+{"_e":"metro:bundling:progress","_t":1789603467307,"id":"3","progress":0.5965364531694097,"total":514,"current":318}
+{"_e":"metro:bundling:progress","_t":1789603467410,"id":"3","progress":0.5965364531694097,"total":534,"current":338}
+{"_e":"metro:bundling:progress","_t":1789603467510,"id":"3","progress":0.5965364531694097,"total":551,"current":353}
+{"_e":"metro:bundling:progress","_t":1789603467612,"id":"3","progress":0.5965364531694097,"total":585,"current":369}
+{"_e":"metro:bundling:progress","_t":1789603467714,"id":"3","progress":0.5965364531694097,"total":617,"current":392}
+{"_e":"metro:bundling:progress","_t":1789603467815,"id":"3","progress":0.5965364531694097,"total":627,"current":402}
+{"_e":"metro:bundling:progress","_t":1789603467915,"id":"3","progress":0.5965364531694097,"total":650,"current":422}
+{"_e":"metro:bundling:progress","_t":1789603468021,"id":"3","progress":0.5965364531694097,"total":713,"current":466}
+{"_e":"metro:bundling:progress","_t":1789603468125,"id":"3","progress":0.5965364531694097,"total":750,"current":496}
+{"_e":"metro:bundling:progress","_t":1789603468224,"id":"3","progress":0.5965364531694097,"total":789,"current":521}
+{"_e":"metro:bundling:progress","_t":1789603468324,"id":"3","progress":0.5965364531694097,"total":801,"current":534}
+{"_e":"metro:bundling:progress","_t":1789603468443,"id":"3","progress":0.5965364531694097,"total":812,"current":547}
+{"_e":"metro:bundling:progress","_t":1789603468542,"id":"3","progress":0.5965364531694097,"total":820,"current":562}
+{"_e":"metro:bundling:progress","_t":1789603468642,"id":"3","progress":0.5965364531694097,"total":822,"current":578}
+{"_e":"metro:bundling:progress","_t":1789603468742,"id":"3","progress":0.5965364531694097,"total":823,"current":604}
+{"_e":"metro:bundling:progress","_t":1789603468846,"id":"3","progress":0.5965364531694097,"total":832,"current":621}
+{"_e":"metro:bundling:progress","_t":1789603468946,"id":"3","progress":0.5965364531694097,"total":840,"current":639}
+{"_e":"metro:bundling:progress","_t":1789603469047,"id":"3","progress":0.6008543118238157,"total":845,"current":655}
+{"_e":"metro:bundling:progress","_t":1789603469158,"id":"3","progress":0.6161604305986874,"total":851,"current":668}
+{"_e":"metro:bundling:progress","_t":1789603469258,"id":"3","progress":0.6475072671933245,"total":855,"current":688}
+{"_e":"metro:bundling:progress","_t":1789603469358,"id":"3","progress":0.6744065697382826,"total":867,"current":712}
+{"_e":"metro:bundling:progress","_t":1789603469460,"id":"3","progress":0.7218170386256477,"total":871,"current":740}
+{"_e":"metro:bundling:progress","_t":1789603469560,"id":"3","progress":0.7218170386256477,"total":897,"current":759}
+{"_e":"metro:bundling:progress","_t":1789603469664,"id":"3","progress":0.7357827160493827,"total":900,"current":772}
+{"_e":"metro:bundling:progress","_t":1789603469764,"id":"3","progress":0.7462099097687974,"total":918,"current":793}
+{"_e":"metro:bundling:progress","_t":1789603469878,"id":"3","progress":0.7691687351410228,"total":927,"current":813}
+{"_e":"metro:bundling:progress","_t":1789603469977,"id":"3","progress":0.7691687351410228,"total":937,"current":821}
+{"_e":"metro:bundling:progress","_t":1789603470080,"id":"3","progress":0.7913821160200324,"total":942,"current":838}
+{"_e":"metro:bundling:progress","_t":1789603470179,"id":"3","progress":0.8149546996589624,"total":946,"current":854}
+{"_e":"metro:bundling:progress","_t":1789603470283,"id":"3","progress":0.841556739202745,"total":956,"current":877}
+{"_e":"metro:bundling:progress","_t":1789603470391,"id":"3","progress":0.8652875434027777,"total":960,"current":893}
+{"_e":"metro:bundling:progress","_t":1789603470491,"id":"3","progress":0.8947073212195499,"total":961,"current":909}
+{"_e":"metro:bundling:progress","_t":1789603470592,"id":"3","progress":0.8988536386271267,"total":963,"current":913}
+{"_e":"metro:bundling:progress","_t":1789603470696,"id":"3","progress":0.9099126998790648,"total":976,"current":931}
+{"_e":"metro:bundling:progress","_t":1789603470799,"id":"3","progress":0.9260632318598314,"total":982,"current":945}
+{"_e":"metro:bundling:progress","_t":1789603470899,"id":"3","progress":0.9364614527722256,"total":991,"current":959}
+{"_e":"metro:bundling:progress","_t":1789603470999,"id":"3","progress":0.9581094319068679,"total":992,"current":971}
+{"_e":"metro:bundling:progress","_t":1789603471108,"id":"3","progress":0.9760248478573774,"total":995,"current":983}
+{"_e":"metro:bundling:progress","_t":1789603471213,"id":"3","progress":0.9801985099378729,"total":1005,"current":995}
+{"_e":"metro:bundling:progress","_t":1789603471325,"id":"3","progress":0.9920792391030486,"total":1008,"current":1004}
+{"_e":"metro:bundling:progress","_t":1789603471426,"id":"3","progress":0.9940682286050387,"total":1010,"current":1007}
+{"_e":"metro:bundling:progress","_t":1789603472102,"id":"3","progress":0.9960435251445937,"total":1010,"current":1008}
+{"_e":"metro:bundling:progress","_t":1789603472203,"id":"3","progress":0.9960435251445937,"total":1021,"current":1015}
+{"_e":"metro:bundling:progress","_t":1789603472308,"id":"3","progress":0.9980459213265949,"total":1023,"current":1022}
+{"_e":"metro:bundling:progress","_t":1789603472456,"id":"3","progress":0.999,"total":1023,"current":1023}
+{"_e":"metro:bundling:done","_t":1789603472596,"id":"3","total":1023,"ms":8546.5856}
+{"_e":"metro:bundling:started","_t":1789603488387,"id":"8","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1789603488387,"id":"8","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789603488444,"id":"8","total":1,"ms":56.3212}
+{"_e":"root:init","_t":1789603570038,"format":"v0-jsonl","version":"57.0.25"}
+{"_e":"env:mode","_t":1789603570039,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1789603570045,"mode":"development","files":["../..\\..\\.env"],"env":{"EXPO_PUBLIC_SPOONACULAR_API_KEY":"5d545a5a94a645159d80ea56babcaa0d"}}
+{"_e":"devserver:start","_t":1789603570494,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1789603571012,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1789603571415,"plugins":[]}
+{"_e":"metro:instantiate","_t":1789603576619,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1789603582173,"id":"3","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1789603582174,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789603582177,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789603582277,"id":"3","progress":0.20124028299414795,"total":214,"current":96}
+{"_e":"metro:bundling:progress","_t":1789603582378,"id":"3","progress":0.24420645399666377,"total":429,"current":212}
+{"_e":"metro:bundling:progress","_t":1789603582478,"id":"3","progress":0.48428576314079547,"total":513,"current":357}
+{"_e":"metro:bundling:progress","_t":1789603582579,"id":"3","progress":0.5742062420431311,"total":644,"current":488}
+{"_e":"metro:bundling:progress","_t":1789603582684,"id":"3","progress":0.6047259566915587,"total":814,"current":633}
+{"_e":"metro:bundling:progress","_t":1789603582784,"id":"3","progress":0.7862550491026719,"total":918,"current":814}
+{"_e":"metro:bundling:progress","_t":1789603582884,"id":"3","progress":0.871236690252637,"total":991,"current":925}
+{"_e":"metro:bundling:progress","_t":1789603582988,"id":"3","progress":0.999,"total":1049,"current":1049}
+{"_e":"metro:bundling:done","_t":1789603583061,"id":"3","total":1049,"ms":887.5499}
+{"_e":"metro:bundling:started","_t":1789603743455,"id":"6","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1789603743456,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789603743510,"id":"6","total":1,"ms":54.4066}
+{"_e":"metro:client_log","_t":1789603787187,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603787263,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603801598,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603801657,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603802483,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603802541,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603803239,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603803365,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603803919,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603803960,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603804479,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603804544,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603805153,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603805211,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603805822,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603805971,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603806288,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789603806338,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:bundling:started","_t":1789604175251,"id":"h","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1789604175251,"id":"h","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789604175320,"id":"h","total":1,"ms":68.3268}
+{"_e":"metro:client_log","_t":1789604182921,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604183009,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604251074,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604251156,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604252156,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604252229,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604253547,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604253617,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604254613,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604254665,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604274785,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604275054,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604275128,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604275205,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604275269,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604275360,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604275492,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604275736,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604275860,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604275975,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604276573,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604276648,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604276790,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604277342,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604277430,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604277532,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604280587,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604280652,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:bundling:started","_t":1789604355584,"id":"z","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1789604355584,"id":"z","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789604355654,"id":"z","total":1,"ms":69.8039}
+{"_e":"metro:client_log","_t":1789604362492,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604362550,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604365369,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604365429,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604366376,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604366484,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604394896,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604395019,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604396495,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604396844,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604397195,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604397354,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604397472,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604397684,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604398819,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604398926,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604399599,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604399834,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604399976,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604402671,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604402872,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604403137,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604403241,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604403442,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604403580,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604404960,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604405035,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604405168,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604405256,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604405405,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604405511,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604405642,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1789604405756,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:server_log","_t":1789605688514,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.exponent","T613P - 15 - API 35","60"]}
+{"_e":"metro:server_log","_t":1789605688514,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.exponent","moto g(20) - 11 - API 30","60"]}
+{"_e":"root:init","_t":1790200376215,"format":"v0-jsonl","version":"57.0.25"}
+{"_e":"env:mode","_t":1790200376218,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790200376230,"mode":"development","files":["../..\\..\\.env"],"env":{"EXPO_PUBLIC_SPOONACULAR_API_KEY":"5d545a5a94a645159d80ea56babcaa0d"}}
+{"_e":"devserver:start","_t":1790200377778,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790200379887,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790200381582,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790200391130,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1790200414041,"id":"3","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1790200414043,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790200414069,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790200416396,"id":"3","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1790200416497,"id":"3","progress":0.010000000000000002,"total":3,"current":1}
+{"_e":"metro:bundling:progress","_t":1790200416545,"id":"3","progress":0.04000000000000001,"total":3,"current":2}
+{"_e":"metro:bundling:progress","_t":1790200416687,"id":"3","progress":0.07650520597555456,"total":47,"current":13}
+{"_e":"metro:bundling:progress","_t":1790200416787,"id":"3","progress":0.07650520597555456,"total":170,"current":43}
+{"_e":"metro:bundling:progress","_t":1790200416887,"id":"3","progress":0.07685521027350262,"total":202,"current":56}
+{"_e":"metro:bundling:progress","_t":1790200416987,"id":"3","progress":0.10831597500400575,"total":237,"current":78}
+{"_e":"metro:bundling:progress","_t":1790200417087,"id":"3","progress":0.17411107085554578,"total":278,"current":116}
+{"_e":"metro:bundling:progress","_t":1790200417210,"id":"3","progress":0.24840510773816205,"total":313,"current":156}
+{"_e":"metro:bundling:progress","_t":1790200417312,"id":"3","progress":0.32239299051996556,"total":354,"current":201}
+{"_e":"metro:bundling:progress","_t":1790200417412,"id":"3","progress":0.343230282624222,"total":396,"current":232}
+{"_e":"metro:bundling:progress","_t":1790200417512,"id":"3","progress":0.3661228125383356,"total":433,"current":262}
+{"_e":"metro:bundling:progress","_t":1790200417634,"id":"3","progress":0.37599806786619977,"total":455,"current":279}
+{"_e":"metro:bundling:progress","_t":1790200417742,"id":"3","progress":0.37599806786619977,"total":494,"current":285}
+{"_e":"metro:bundling:progress","_t":1790200417846,"id":"3","progress":0.3972380029653117,"total":522,"current":329}
+{"_e":"metro:bundling:progress","_t":1790200417946,"id":"3","progress":0.48492231404958686,"total":550,"current":383}
+{"_e":"metro:bundling:progress","_t":1790200418050,"id":"3","progress":0.5672056861057153,"total":559,"current":421}
+{"_e":"metro:bundling:progress","_t":1790200418151,"id":"3","progress":0.5672056861057153,"total":604,"current":449}
+{"_e":"metro:bundling:progress","_t":1790200418251,"id":"3","progress":0.6082507268606487,"total":627,"current":489}
+{"_e":"metro:bundling:progress","_t":1790200418418,"id":"3","progress":0.6319497656459911,"total":634,"current":504}
+{"_e":"metro:bundling:progress","_t":1790200418519,"id":"3","progress":0.6727964330373034,"total":662,"current":543}
+{"_e":"metro:bundling:progress","_t":1790200418621,"id":"3","progress":0.7116057077391335,"total":684,"current":577}
+{"_e":"metro:bundling:progress","_t":1790200418725,"id":"3","progress":0.776492500735222,"total":707,"current":623}
+{"_e":"metro:bundling:progress","_t":1790200418835,"id":"3","progress":0.8323013550092128,"total":707,"current":645}
+{"_e":"metro:bundling:progress","_t":1790200418938,"id":"3","progress":0.8379091312383002,"total":709,"current":649}
+{"_e":"metro:bundling:progress","_t":1790200419037,"id":"3","progress":0.8437144931195556,"total":712,"current":654}
+{"_e":"metro:bundling:progress","_t":1790200419137,"id":"3","progress":0.8437144931195556,"total":727,"current":662}
+{"_e":"metro:bundling:progress","_t":1790200419240,"id":"3","progress":0.8437144931195556,"total":733,"current":671}
+{"_e":"metro:bundling:progress","_t":1790200419356,"id":"3","progress":0.8437144931195556,"total":776,"current":677}
+{"_e":"metro:bundling:progress","_t":1790200419463,"id":"3","progress":0.8437144931195556,"total":808,"current":689}
+{"_e":"metro:bundling:progress","_t":1790200419564,"id":"3","progress":0.8437144931195556,"total":812,"current":714}
+{"_e":"metro:bundling:progress","_t":1790200419665,"id":"3","progress":0.8437144931195556,"total":824,"current":723}
+{"_e":"metro:bundling:progress","_t":1790200419773,"id":"3","progress":0.8437144931195556,"total":834,"current":732}
+{"_e":"metro:bundling:progress","_t":1790200419873,"id":"3","progress":0.8437144931195556,"total":837,"current":738}
+{"_e":"metro:bundling:progress","_t":1790200419994,"id":"3","progress":0.8437144931195556,"total":842,"current":744}
+{"_e":"metro:bundling:progress","_t":1790200420115,"id":"3","progress":0.8437144931195556,"total":842,"current":750}
+{"_e":"metro:bundling:progress","_t":1790200420234,"id":"3","progress":0.8437144931195556,"total":849,"current":758}
+{"_e":"metro:bundling:progress","_t":1790200420335,"id":"3","progress":0.8437144931195556,"total":860,"current":770}
+{"_e":"metro:bundling:progress","_t":1790200420435,"id":"3","progress":0.8437144931195556,"total":883,"current":780}
+{"_e":"metro:bundling:progress","_t":1790200420536,"id":"3","progress":0.8437144931195556,"total":902,"current":788}
+{"_e":"metro:bundling:progress","_t":1790200420642,"id":"3","progress":0.8437144931195556,"total":929,"current":812}
+{"_e":"metro:bundling:progress","_t":1790200420741,"id":"3","progress":0.8437144931195556,"total":940,"current":847}
+{"_e":"metro:bundling:progress","_t":1790200420865,"id":"3","progress":0.8437144931195556,"total":954,"current":866}
+{"_e":"metro:bundling:progress","_t":1790200420965,"id":"3","progress":0.8437144931195556,"total":963,"current":876}
+{"_e":"metro:bundling:progress","_t":1790200421066,"id":"3","progress":0.8492887351018837,"total":969,"current":893}
+{"_e":"metro:bundling:progress","_t":1790200421170,"id":"3","progress":0.8648425344252105,"total":971,"current":903}
+{"_e":"metro:bundling:progress","_t":1790200421278,"id":"3","progress":0.8648425344252105,"total":1005,"current":913}
+{"_e":"metro:bundling:progress","_t":1790200421391,"id":"3","progress":0.8648425344252105,"total":1005,"current":923}
+{"_e":"metro:bundling:progress","_t":1790200421491,"id":"3","progress":0.8648425344252105,"total":1006,"current":934}
+{"_e":"metro:bundling:progress","_t":1790200421597,"id":"3","progress":0.87890625,"total":1008,"current":945}
+{"_e":"metro:bundling:progress","_t":1790200421697,"id":"3","progress":0.8920793139249233,"total":1009,"current":953}
+{"_e":"metro:bundling:progress","_t":1790200421805,"id":"3","progress":0.9076551238807056,"total":1015,"current":967}
+{"_e":"metro:bundling:progress","_t":1790200421906,"id":"3","progress":0.9191874355896418,"total":1018,"current":976}
+{"_e":"metro:bundling:progress","_t":1790200422019,"id":"3","progress":0.9307241369055897,"total":1021,"current":985}
+{"_e":"metro:bundling:progress","_t":1790200422135,"id":"3","progress":0.9440537145614486,"total":1022,"current":993}
+{"_e":"metro:bundling:progress","_t":1790200422244,"id":"3","progress":0.9557108982496927,"total":1027,"current":1004}
+{"_e":"metro:bundling:progress","_t":1790200422345,"id":"3","progress":0.9653539447638797,"total":1030,"current":1012}
+{"_e":"metro:bundling:progress","_t":1790200422448,"id":"3","progress":0.9865450835945616,"total":1037,"current":1030}
+{"_e":"metro:bundling:progress","_t":1790200422549,"id":"3","progress":0.9980759985215665,"total":1039,"current":1038}
+{"_e":"metro:bundling:progress","_t":1790200423087,"id":"3","progress":0.999,"total":1039,"current":1039}
+{"_e":"metro:bundling:progress","_t":1790200423187,"id":"3","progress":0.999,"total":1048,"current":1046}
+{"_e":"metro:bundling:done","_t":1790200423347,"id":"3","total":1048,"ms":9305.286}
+{"_e":"metro:client_log","_t":1790200429489,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790200429551,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790200454501,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790200454567,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:server_log","_t":1790203926535,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.exponent","moto g56 5G - 16 - API 36","60"]}
+{"_e":"metro:bundling:started","_t":1790204215548,"id":"f","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1790204215548,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204215553,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204215742,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204215819,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204215919,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204216019,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204216120,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204216222,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204216322,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204216427,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204216527,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204216627,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204216727,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204216828,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204216968,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790204217092,"id":"f","total":1,"ms":1543.584}
+{"_e":"metro:client_log","_t":1790204222090,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790204222143,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790204271853,"level":"log","data":["📦 Datos a guardar en MySQL:","{\"apellido\": \"sosa\", \"avatar\": null, \"email\": \"isaa.sosaa31@gmail.com\", \"fecha_creacion\": \"2026-09-23T22:57:51.406Z\", \"intereses\": \"comida rapida\", \"nombre\": \"isa\", \"username\": \"isa9292\"}"]}
+{"_e":"metro:bundling:started","_t":1790204777783,"id":"k","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1790204777784,"id":"k","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204777788,"id":"k","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204777937,"id":"k","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204778018,"id":"k","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204778119,"id":"k","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204778219,"id":"k","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204778320,"id":"k","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204778420,"id":"k","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204778520,"id":"k","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204778620,"id":"k","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790204778723,"id":"k","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790204778914,"id":"k","total":1,"ms":1130.5055}
+{"_e":"metro:client_log","_t":1790204784201,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790204784268,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790204829972,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790204830037,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790204830038,"level":"error","data":["Error en getRecipeDetails:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790204830038,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:bundling:started","_t":1790205409313,"id":"p","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1790205409313,"id":"p","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205409318,"id":"p","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205409500,"id":"p","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205409582,"id":"p","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205409682,"id":"p","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205409782,"id":"p","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205409883,"id":"p","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205409983,"id":"p","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205410083,"id":"p","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205410183,"id":"p","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205410309,"id":"p","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790205410405,"id":"p","total":1,"ms":1092.0962}
+{"_e":"metro:client_log","_t":1790205426572,"level":"log","data":["📦 Datos a guardar en MySQL:","{\"apellido\": \"sisa\", \"avatar\": null, \"email\": \"isaa.sosaa31@gmail.com\", \"fecha_creacion\": \"2026-09-23T23:17:06.057Z\", \"intereses\": \"gourmet\", \"nombre\": \"isa\", \"username\": \"isaiwkdjaj\"}"]}
+{"_e":"metro:client_log","_t":1790205428948,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205429008,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:bundling:started","_t":1790205630367,"id":"u","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1790205630367,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205630369,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205630480,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205630567,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205630668,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205630768,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205630868,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205630969,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205631070,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205631172,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205631273,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205631401,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:started","_t":1790205631473,"id":"w","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1790205631473,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205631473,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205631506,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205631507,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205631599,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205631599,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790205631887,"id":"u","total":1,"ms":1519.6908}
+{"_e":"metro:bundling:progress","_t":1790205631887,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205631888,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205632049,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205632151,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205632252,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205632352,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205632453,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205632552,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205632652,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205632756,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205632856,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205632957,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205633056,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205633156,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205633260,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205633361,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205633460,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790205633618,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790205633837,"id":"w","total":1,"ms":2364.2124}
+{"_e":"metro:client_log","_t":1790205653284,"level":"log","data":["📦 Datos a guardar en MySQL:","{\"apellido\": \"nbb\", \"avatar\": null, \"email\": \"isaa.sosaa31@gmail.com\", \"fecha_creacion\": \"2026-09-23T23:20:52.747Z\", \"intereses\": \"panaderia\", \"nombre\": \"ikj\", \"username\": \"bbv\"}"]}
+{"_e":"metro:client_log","_t":1790205655658,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205655723,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205660157,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205660224,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205675203,"level":"log","data":["📦 Datos a guardar en MySQL:","{\"apellido\": \"Keke\", \"avatar\": null, \"email\": \"kierokeke@gmail.com\", \"fecha_creacion\": \"2026-09-23T23:21:14.384Z\", \"intereses\": \"panaderia,comida rapida,gourmet,reposteria,pastas,vegana\", \"nombre\": \"Kiero\", \"username\": \"kekekiero\"}"]}
+{"_e":"metro:bundling:started","_t":1790205705767,"id":"12","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1790205705767,"id":"12","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790205705888,"id":"12","total":1,"ms":120.6775}
+{"_e":"metro:client_log","_t":1790205720112,"level":"log","data":["📦 Datos a guardar en MySQL:","{\"apellido\": \"nbb\", \"avatar\": null, \"email\": \"isaa.sosaa31@gmail.com\", \"fecha_creacion\": \"2026-09-23T23:21:59.670Z\", \"intereses\": \"panaderia\", \"nombre\": \"ikj\", \"username\": \"bbv\"}"]}
+{"_e":"metro:client_log","_t":1790205732747,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205732821,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205732821,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205732821,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205757661,"level":"log","data":["📦 Datos a guardar en MySQL:","{\"apellido\": \"Mamani\", \"avatar\": null, \"email\": \"micamamaniquispe@gmail.com\", \"fecha_creacion\": \"2026-09-23T23:22:36.201Z\", \"intereses\": \"comida rapida,reposteria,panaderia,gourmet,vegana,pastas\", \"nombre\": \"Micaela\", \"username\": \"micaelaaa\"}"]}
+{"_e":"metro:client_log","_t":1790205763656,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205763729,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205773092,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205773159,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205774322,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205774375,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205777687,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205777744,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205777747,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205777805,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205781061,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205781116,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205783816,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205783880,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205785013,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205785071,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205785541,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205785599,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205847397,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205847447,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205848967,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205849022,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205849786,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205850792,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205851219,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205856447,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205856857,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205856929,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205856930,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205857677,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205858084,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205858482,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205858906,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205858972,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205859936,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205860235,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205863922,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205863996,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790205864088,"level":"error","data":["Error en searchRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:bundling:started","_t":1790206081664,"id":"1q","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1790206081665,"id":"1q","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790206081846,"id":"1q","total":1,"ms":181.6849}
+{"_e":"metro:client_log","_t":1790206104106,"level":"log","data":["📦 Datos a guardar en MySQL:","{\"apellido\": \"bdbandb\", \"avatar\": null, \"email\": \"hdjejs@tuputamadre.con\", \"fecha_creacion\": \"2026-09-23T23:28:23.651Z\", \"intereses\": \"gourmet\", \"nombre\": \"jajdbd\", \"username\": \"ndnsnd\"}"]}
+{"_e":"metro:client_log","_t":1790206106554,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790206106616,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790206117993,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790206118051,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790206276807,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790206276860,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790206276860,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790206276860,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790206359300,"level":"error","data":["[ReferenceError: Property 'DetalleRecetaScreen' doesn't exist]"]}
+{"_e":"metro:client_log","_t":1790206365599,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790206365666,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790206387911,"level":"log","data":["📦 Datos a guardar en MySQL:","{\"apellido\": \"xDmzn\", \"avatar\": null, \"email\": \"isaa.sosaa31@gmail.com\", \"fecha_creacion\": \"2026-09-23T23:33:07.413Z\", \"intereses\": \"panaderia\", \"nombre\": \"saxx\", \"username\": \"ksns\"}"]}
+{"_e":"metro:client_log","_t":1790206389482,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790206389537,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790206453353,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790206453414,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"root:init","_t":1790207446857,"format":"v0-jsonl","version":"57.0.25"}
+{"_e":"env:mode","_t":1790207446858,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790207446862,"mode":"development","files":["../..\\..\\.env"],"env":{"EXPO_PUBLIC_SPOONACULAR_API_KEY":"5d545a5a94a645159d80ea56babcaa0d"}}
+{"_e":"devserver:start","_t":1790207447331,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790207447839,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790207448219,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790207453452,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1790207984763,"id":"3","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1790207984764,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790207984769,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790207984869,"id":"3","progress":0.17693373645754598,"total":126,"current":53}
+{"_e":"metro:bundling:progress","_t":1790207984970,"id":"3","progress":0.17693373645754598,"total":384,"current":150}
+{"_e":"metro:bundling:progress","_t":1790207985069,"id":"3","progress":0.2517889030612245,"total":560,"current":281}
+{"_e":"metro:bundling:progress","_t":1790207985169,"id":"3","progress":0.3926393928788521,"total":699,"current":438}
+{"_e":"metro:bundling:progress","_t":1790207985269,"id":"3","progress":0.5828019036287924,"total":820,"current":626}
+{"_e":"metro:bundling:progress","_t":1790207985369,"id":"3","progress":0.7502311851956223,"total":919,"current":796}
+{"_e":"metro:bundling:progress","_t":1790207985469,"id":"3","progress":0.8451224436350281,"total":979,"current":900}
+{"_e":"metro:bundling:progress","_t":1790207985576,"id":"3","progress":0.999,"total":1050,"current":1050}
+{"_e":"metro:bundling:done","_t":1790207985652,"id":"3","total":1050,"ms":888.8776}
+{"_e":"metro:bundling:started","_t":1790208544125,"id":"c","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1790208544126,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790208544187,"id":"c","total":1,"ms":61.3106}
+{"_e":"root:init","_t":1790208694001,"format":"v0-jsonl","version":"57.0.25"}
+{"_e":"env:mode","_t":1790208694003,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790208694012,"mode":"development","files":["../..\\..\\.env"],"env":{"EXPO_PUBLIC_SPOONACULAR_API_KEY":"5d545a5a94a645159d80ea56babcaa0d"}}
+{"_e":"devserver:start","_t":1790208694985,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790208696041,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790208697120,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790208705814,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1790208714544,"id":"3","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1790208714545,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790208714553,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790208714652,"id":"3","progress":0.022360031443794216,"total":107,"current":16}
+{"_e":"metro:bundling:progress","_t":1790208714752,"id":"3","progress":0.0625,"total":224,"current":56}
+{"_e":"metro:bundling:progress","_t":1790208714852,"id":"3","progress":0.11388012920664438,"total":323,"current":109}
+{"_e":"metro:bundling:progress","_t":1790208714954,"id":"3","progress":0.1301352996221742,"total":377,"current":136}
+{"_e":"metro:bundling:progress","_t":1790208715054,"id":"3","progress":0.17809948657520414,"total":436,"current":184}
+{"_e":"metro:bundling:progress","_t":1790208715154,"id":"3","progress":0.268324,"total":500,"current":259}
+{"_e":"metro:bundling:progress","_t":1790208715261,"id":"3","progress":0.35508538187277167,"total":584,"current":348}
+{"_e":"metro:bundling:progress","_t":1790208715361,"id":"3","progress":0.41868512110726647,"total":714,"current":462}
+{"_e":"metro:bundling:progress","_t":1790208715461,"id":"3","progress":0.5463955739435025,"total":786,"current":581}
+{"_e":"metro:bundling:progress","_t":1790208715562,"id":"3","progress":0.6177541820861523,"total":827,"current":650}
+{"_e":"metro:bundling:progress","_t":1790208715662,"id":"3","progress":0.7375542753819531,"total":857,"current":736}
+{"_e":"metro:bundling:progress","_t":1790208715762,"id":"3","progress":0.8189581059066088,"total":947,"current":857}
+{"_e":"metro:bundling:progress","_t":1790208715862,"id":"3","progress":0.840120444486398,"total":971,"current":890}
+{"_e":"metro:bundling:progress","_t":1790208715967,"id":"3","progress":0.8959278502107636,"total":1010,"current":956}
+{"_e":"metro:bundling:progress","_t":1790208716085,"id":"3","progress":0.999,"total":1050,"current":1050}
+{"_e":"metro:bundling:done","_t":1790208716236,"id":"3","total":1050,"ms":1691.368}
+{"_e":"metro:bundling:started","_t":1790209207045,"id":"5","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1790209207046,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790209207054,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790209207214,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790209207317,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790209207417,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790209207517,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790209207618,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790209207717,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790209207818,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790209207917,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790209208018,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790209208132,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790209209748,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790209209926,"id":"5","total":1,"ms":2880.1875}
+{"_e":"metro:client_log","_t":1790209229475,"level":"log","data":["📦 Datos a guardar en MySQL:","{\"apellido\": \"sosa\", \"avatar\": null, \"email\": \"isaa.sosaa31@gmail.com\", \"fecha_creacion\": \"2026-09-24T00:20:29.030Z\", \"intereses\": \"comida rapida\", \"nombre\": \"isa\", \"username\": \"iaoqjs\"}"]}
+{"_e":"metro:client_log","_t":1790209232468,"level":"error","data":["Error en getRandomRecipes:","[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:client_log","_t":1790209232525,"level":"error","data":["[AxiosError: Request failed with status code 401]"]}
+{"_e":"metro:bundling:failed","_t":1790209305157,"id":null,"message":"Unable to resolve \"../servicios/servicioTraduccion\" from \"src\\screens\\detalleReceta.js\"\n  13 | import { Ionicons } from '@expo/vector-icons';\n  14 | import { getRecipeDetails } from '../servicios/spoonacularApi';\n> 15 | import { traducirTexto } from '../servicios/servicioTraduccion';\n     |                                ^\n  16 |\n  17 | const COLOR_PRINCIPAL = \"#34B87F\";\n  18 |","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39msrc\\screens\\detalleReceta.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../servicios/servicioTraduccion\"\u001b[39m\n\n\u001b[90m \u001b[39mApp.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./src/screens/detalleReceta\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"../servicios/servicioTraduccion","originModulePath":"src\\screens\\detalleReceta.js"}
+{"_e":"metro:bundling:failed","_t":1790209305359,"id":null,"message":"Unable to resolve \"../servicios/servicioTraduccion\" from \"src\\screens\\detalleReceta.js\"\n  13 | import { Ionicons } from '@expo/vector-icons';\n  14 | import { getRecipeDetails } from '../servicios/spoonacularApi';\n> 15 | import { traducirTexto } from '../servicios/servicioTraduccion';\n     |                                ^\n  16 |\n  17 | const COLOR_PRINCIPAL = \"#34B87F\";\n  18 |","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39msrc\\screens\\detalleReceta.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../servicios/servicioTraduccion\"\u001b[39m\n\n\u001b[90m \u001b[39mApp.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./src/screens/detalleReceta\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"../servicios/servicioTraduccion","originModulePath":"src\\screens\\detalleReceta.js"}
+{"_e":"metro:bundling:started","_t":1790209428421,"id":"8","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1790209428421,"id":"8","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790209428587,"id":"8","total":1,"ms":166.1005}
+{"_e":"metro:client_log","_t":1790209471892,"level":"log","data":["📦 Datos a guardar en MySQL:","{\"apellido\": \"sosa\", \"avatar\": null, \"email\": \"isaa.sosaa31@gmail.com\", \"fecha_creacion\": \"2026-09-24T00:24:31.433Z\", \"intereses\": \"comida rapida\", \"nombre\": \"isia\", \"username\": \"isa\"}"]}
+{"_e":"metro:server_log","_t":1790210992531,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.exponent","moto g56 5G - 16 - API 36","60"]}
+{"_e":"metro:server_log","_t":1790210992531,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.exponent","moto g56 5G - 16 - API 36","60"]}
+{"_e":"metro:server_log","_t":1790210992531,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.exponent","moto g(20) - 11 - API 30","60"]}
+{"_e":"metro:server_log","_t":1790210992531,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.exponent","moto g56 5G - 16 - API 36","60"]}
