@@ -22,10 +22,10 @@ const CrearPerfilScreen = ({ navigation }) => {
   // ESTADO DEL FORMULARIO
   // ============================================
   const [formData, setFormData] = useState({
-    nombre: '',
-    apellido: '',
-    email: '',
-    username: '',
+    nombre: 'isa',//datos por defecto para no escribir cada vez que se recarga
+    apellido: 'sosa',
+    email: 'isa@gmail.com',
+    username: 'isasosa67',
     intereses: [], // Array de intereses seleccionados
     avatar: null,  // URI de la imagen (para más adelante)
   });

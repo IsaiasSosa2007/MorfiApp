@@ -1,174 +1,217 @@
-import React from "react";
-import {View, Text, StyleSheet, TouchableOpacity, ScrollView,} from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+// src/screens/ajustes.js
+import React, { useState, useEffect } from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  ScrollView,
+  Switch,
+  Alert,
+} from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { useTema } from '../context/TemaContext';
+import {
+  guardarPreferencias,
+  leerPreferencias,
+  borrarDatos,
+} from '../servicios/almacenamiento';
 
-const COLOR_PRINCIPAL = "#34B87F";
+const SettingsScreen = ({ navigation }) => {
+  const { modoOscuro, toggleModoOscuro, colores } = useTema();
+  const [notificaciones, setNotificaciones] = useState(true);
 
-const SettingsScreen = () => {
-  const settingsOptions = [
-    { id: "1", title: "Perfil", icon: "person-outline" },
-    { id: "2", title: "Notificaciones", icon: "notifications-outline" },
-    { id: "3", title: "Privacidad", icon: "lock-closed-outline" },
-    { id: "4", title: "Idioma", icon: "language-outline" },
-    { id: "5", title: "Ayuda", icon: "help-circle-outline" },
-    { id: "6", title: "Cerrar sesión", icon: "log-out-outline" },
-  ];
+  useEffect(() => {
+    cargarPreferencias();
+  }, []);
 
-  const renderOption = ({ item }) => (
-    <TouchableOpacity style={styles.optionItem}>
-      <View style={styles.optionLeft}>
-        <Ionicons name={item.icon} size={24} color={COLOR_PRINCIPAL} />
-        <Text style={styles.optionTitle}>{item.title}</Text>
+  const cargarPreferencias = async () => {
+    const notif = await leerPreferencias('notificaciones');
+    if (notif !== null) setNotificaciones(notif);
+  };
+
+  const toggleNotificaciones = async (valor) => {
+    setNotificaciones(valor);
+    await guardarPreferencias('notificaciones', valor);
+  };
+
+  const handleCerrarSesion = () => {
+    Alert.alert(
+      'Cerrar sesión',
+      '¿Estás seguro que querés cerrar sesión?',
+      [
+        { text: 'Cancelar', style: 'cancel' },
+        {
+          text: 'Cerrar sesión',
+          style: 'destructive',
+          onPress: async () => {
+            await borrarDatos();
+            navigation.reset({
+              index: 0,
+              routes: [{ name: 'CrearPerfil' }],
+            });
+          },
+        },
+      ]
+    );
+  };
+
+  const OpcionMenu = ({
+    icono,
+    titulo,
+    onPress,
+    colorIcono,
+    mostrarSwitch,
+    valorSwitch,
+    onSwitch,
+  }) => (
+    <TouchableOpacity
+      style={[styles.opcionItem, { borderTopColor: colores.bordeSuave }]}
+      onPress={onPress}
+      disabled={mostrarSwitch}
+    >
+      <View style={styles.opcionLeft}>
+        <Ionicons name={icono} size={24} color={colorIcono || colores.principal} />
+        <Text style={[styles.opcionTitulo, { color: colores.texto }]}>{titulo}</Text>
       </View>
-      <Ionicons name="chevron-forward-outline" size={20} color="#999" />
+      {mostrarSwitch ? (
+        <Switch
+          value={valorSwitch}
+          onValueChange={onSwitch}
+          trackColor={{ false: '#ccc', true: colores.principal }}
+          thumbColor="#fff"
+        />
+      ) : (
+        <Ionicons name="chevron-forward-outline" size={20} color={colores.textoMuted} />
+      )}
     </TouchableOpacity>
   );
 
   return (
-    <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.headerTitle}>Ajustes</Text>
-        <Text style={styles.headerSubtitle}>Configura tu experiencia</Text>
+    <View style={[styles.container, { backgroundColor: colores.fondo }]}>
+      <View style={[styles.header, { backgroundColor: colores.fondoHeader, borderBottomColor: colores.borde }]}>
+        <Text style={[styles.headerTitle, { color: colores.texto }]}>Ajustes</Text>
+        <Text style={[styles.headerSubtitle, { color: colores.textoSecondary }]}>
+          Configurá tu experiencia
+        </Text>
       </View>
 
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>General</Text>
-          {settingsOptions.slice(0, 4).map((item) => (
-            <TouchableOpacity key={item.id} style={styles.optionItem}>
-              <View style={styles.optionLeft}>
-                <Ionicons name={item.icon} size={24} color={COLOR_PRINCIPAL} />
-                <Text style={styles.optionTitle}>{item.title}</Text>
-              </View>
-              <Ionicons name="chevron-forward-outline" size={20} color="#999" />
-            </TouchableOpacity>
-          ))}
+        <View style={[styles.section, { backgroundColor: colores.fondoCard }]}>
+          <Text style={[styles.sectionTitle, { color: colores.textoMuted }]}>Cuenta</Text>
+          <OpcionMenu
+            icono="person-outline"
+            titulo="Editar perfil"
+            onPress={() => navigation.navigate('EditarPerfil')}
+          />
+          <OpcionMenu
+            icono="lock-closed-outline"
+            titulo="Privacidad"
+            onPress={() => navigation.navigate('Privacidad')}
+          />
         </View>
 
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Soporte</Text>
-          {settingsOptions.slice(4, 6).map((item) => (
-            <TouchableOpacity key={item.id} style={styles.optionItem}>
-              <View style={styles.optionLeft}>
-                <Ionicons
-                  name={item.icon}
-                  size={24}
-                  color={
-                    item.title === "Cerrar sesión" ? "#ff6b6b" : COLOR_PRINCIPAL
-                  }
-                />
-                <Text
-                  style={[
-                    styles.optionTitle,
-                    item.title === "Cerrar sesión" && styles.logoutText,
-                  ]}
-                >
-                  {item.title}
-                </Text>
-              </View>
-              {item.title !== "Cerrar sesión" && (
-                <Ionicons
-                  name="chevron-forward-outline"
-                  size={20}
-                  color="#999"
-                />
-              )}
-            </TouchableOpacity>
-          ))}
+        <View style={[styles.section, { backgroundColor: colores.fondoCard }]}>
+          <Text style={[styles.sectionTitle, { color: colores.textoMuted }]}>Preferencias</Text>
+          <OpcionMenu
+            icono="notifications-outline"
+            titulo="Notificaciones"
+            mostrarSwitch
+            valorSwitch={notificaciones}
+            onSwitch={toggleNotificaciones}
+          />
+          <OpcionMenu
+            icono="moon-outline"
+            titulo="Modo oscuro"
+            mostrarSwitch
+            valorSwitch={modoOscuro}
+            onSwitch={toggleModoOscuro}
+          />
+        </View>
+
+        <View style={[styles.section, { backgroundColor: colores.fondoCard }]}>
+          <Text style={[styles.sectionTitle, { color: colores.textoMuted }]}>Soporte</Text>
+          <OpcionMenu
+            icono="help-circle-outline"
+            titulo="Ayuda y soporte"
+            onPress={() => navigation.navigate('Ayuda')}
+          />
+          <OpcionMenu
+            icono="information-circle-outline"
+            titulo="Acerca de MorfiApp"
+            onPress={() =>
+              Alert.alert('MorfiApp', 'Versión 1.0.0\n\nTu app de recetas favorita 🍳', [
+                { text: 'OK' },
+              ])
+            }
+          />
+        </View>
+
+        <View style={[styles.section, { backgroundColor: colores.fondoCard }]}>
+          <Text style={[styles.sectionTitle, { color: colores.textoMuted }]}>Sesión</Text>
+          <OpcionMenu
+            icono="log-out-outline"
+            titulo="Cerrar sesión"
+            colorIcono="#ff6b6b"
+            onPress={handleCerrarSesion}
+          />
         </View>
 
         <View style={styles.versionContainer}>
-          <Text style={styles.versionText}>Versión beta</Text>
-          <Text style={styles.versionSubtext}>MorfiApp © 2024</Text>
+          <Text style={[styles.versionText, { color: colores.textoMuted }]}>MorfiApp v1.0.0</Text>
+          <Text style={[styles.versionSubtext, { color: colores.textoMuted }]}>
+            © 2025 - Hecho con 🍳
+          </Text>
         </View>
+
+        <View style={{ height: 40 }} />
       </ScrollView>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#f8f9fa",
-  },
+  container: { flex: 1 },
   header: {
     paddingHorizontal: 20,
     paddingTop: 20,
     paddingBottom: 10,
-    backgroundColor: "#fff",
     borderBottomWidth: 1,
-    borderBottomColor: "#e0e0e0",
   },
-  headerTitle: {
-    fontSize: 28,
-    fontWeight: "bold",
-    color: "#1a1a1a",
-  },
-  headerSubtitle: {
-    fontSize: 14,
-    color: "#666",
-    marginTop: 2,
-  },
-  content: {
-    flex: 1,
-    paddingHorizontal: 16,
-    paddingTop: 16,
-  },
+  headerTitle: { fontSize: 28, fontWeight: 'bold' },
+  headerSubtitle: { fontSize: 14, marginTop: 2 },
+  content: { flex: 1, paddingHorizontal: 16, paddingTop: 16 },
   section: {
-    backgroundColor: "#fff",
     borderRadius: 12,
     paddingVertical: 8,
     marginBottom: 16,
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.1,
     shadowRadius: 2,
     elevation: 2,
   },
   sectionTitle: {
-    fontSize: 14,
-    fontWeight: "600",
-    color: "#666",
+    fontSize: 13,
+    fontWeight: '600',
     paddingHorizontal: 16,
     paddingVertical: 8,
-    textTransform: "uppercase",
+    textTransform: 'uppercase',
     letterSpacing: 1,
   },
-  optionItem: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
+  opcionItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     paddingHorizontal: 16,
-    paddingVertical: 12,
-    borderBottomWidth: 1,
-    borderBottomColor: "#f0f0f0",
+    paddingVertical: 14,
+    borderTopWidth: 1,
   },
-  optionLeft: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  optionTitle: {
-    fontSize: 16,
-    color: "#1a1a1a",
-    marginLeft: 12,
-  },
-  logoutText: {
-    color: "#ff6b6b",
-  },
-  versionContainer: {
-    alignItems: "center",
-    paddingVertical: 20,
-    marginBottom: 20,
-  },
-  versionText: {
-    fontSize: 14,
-    color: "#666",
-  },
-  versionSubtext: {
-    fontSize: 12,
-    color: "#999",
-    marginTop: 4,
-  },
+  opcionLeft: { flexDirection: 'row', alignItems: 'center', flex: 1 },
+  opcionTitulo: { fontSize: 16, marginLeft: 12 },
+  versionContainer: { alignItems: 'center', paddingVertical: 20 },
+  versionText: { fontSize: 13, fontWeight: '500' },
+  versionSubtext: { fontSize: 11, marginTop: 4 },
 });
 
 export default SettingsScreen;
