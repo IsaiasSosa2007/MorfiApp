@@ -1,7 +1,6 @@
 // src/servicios/almacenamiento.js
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-// ============ GUARDAR DATOS ============
 export const guardarPreferencias = async (clave, valor) => {
   try {
     await AsyncStorage.setItem(clave, JSON.stringify(valor));
@@ -10,7 +9,6 @@ export const guardarPreferencias = async (clave, valor) => {
   }
 };
 
-// ============ LEER DATOS ============
 export const leerPreferencias = async (clave) => {
   try {
     const valor = await AsyncStorage.getItem(clave);
@@ -21,7 +19,6 @@ export const leerPreferencias = async (clave) => {
   }
 };
 
-// ============ BORRAR DATOS ============
 export const borrarDatos = async () => {
   try {
     await AsyncStorage.clear();

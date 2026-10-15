@@ -7,30 +7,35 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
-  Image,
   Alert,
   KeyboardAvoidingView,
   Platform,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-
-const COLOR_PRINCIPAL = "#34B87F";
-const COLOR_NARANJA = "#F5A623"; // Color del botón según la imagen
+import { useTema } from '../context/TemaContext';
+// import {conectar}from '../database/conexion.js';
+// const bdd=await conectar();
 
 const CrearPerfilScreen = ({ navigation }) => {
+  const { colores } = useTema();
   // ============================================
   // ESTADO DEL FORMULARIO
   // ============================================
   const [formData, setFormData] = useState({
-    nombre: 'isa',//datos por defecto para no escribir cada vez que se recarga
-    apellido: 'sosa',
+    nombre: 'isa',
+    apellido: 'hernandez',
     email: 'isa@gmail.com',
-    username: 'isasosa67',
-    intereses: [], // Array de intereses seleccionados
-    avatar: null,  // URI de la imagen (para más adelante)
+    username: 'isaiasAbraham',
+    password: 'supermeganashe',           // ← NUEVO
+    descripcion: 'megusta el keke',        // ← NUEVO (opcional)
+    intereses: [],
+    avatar: null,
   });
 
-  // Lista de intereses disponibles (según la imagen)
+  // Estado para mostrar/ocultar la contraseña
+  const [mostrarPassword, setMostrarPassword] = useState(false);
+
+  // Lista de intereses disponibles
   const interesesDisponibles = [
     { id: '1', name: 'comida rapida' },
     { id: '2', name: 'panaderia' },
@@ -44,7 +49,6 @@ const CrearPerfilScreen = ({ navigation }) => {
   // FUNCIONES
   // ============================================
 
-  // Actualizar un campo del formulario
   const handleChange = (field, value) => {
     setFormData({
       ...formData,
@@ -52,17 +56,14 @@ const CrearPerfilScreen = ({ navigation }) => {
     });
   };
 
-  // Seleccionar/deseleccionar un interés
   const toggleInteres = (interes) => {
     const yaSeleccionado = formData.intereses.includes(interes);
     if (yaSeleccionado) {
-      // Quitar el interés
       setFormData({
         ...formData,
         intereses: formData.intereses.filter((i) => i !== interes),
       });
     } else {
-      // Agregar el interés
       setFormData({
         ...formData,
         intereses: [...formData.intereses, interes],
@@ -70,22 +71,30 @@ const CrearPerfilScreen = ({ navigation }) => {
     }
   };
 
-  // Validar el formulario
+  // Validar formulario
   const validarFormulario = () => {
     if (!formData.nombre.trim()) {
       Alert.alert('Error', 'Por favor ingresa tu nombre');
       return false;
     }
-    if (!formData.apellido.trim()) {
-      Alert.alert('Error', 'Por favor ingresa tu apellido');
-      return false;
-    }
+    // if (!formData.apellido.trim()) {
+    //   Alert.alert('Error', 'Por favor ingresa tu apellido');
+    //   return false;
+    // }
     if (!formData.email.trim() || !formData.email.includes('@')) {
       Alert.alert('Error', 'Por favor ingresa un email válido');
       return false;
     }
     if (!formData.username.trim()) {
       Alert.alert('Error', 'Por favor ingresa un username');
+      return false;
+    }
+    if (!formData.password.trim()) {
+      Alert.alert('Error', 'Por favor ingresa una contraseña');
+      return false;
+    }
+    if (formData.password.length < 6) {
+      Alert.alert('Error', 'La contraseña debe tener al menos 6 caracteres');
       return false;
     }
     if (formData.intereses.length === 0) {
@@ -97,120 +106,235 @@ const CrearPerfilScreen = ({ navigation }) => {
 
   // Guardar y continuar
   const handleGuardar = () => {
-  if (!validarFormulario()) return;
+    if (!validarFormulario()) return;
 
-  const perfilParaGuardar = {
-    nombre: formData.nombre.trim(),
-    apellido: formData.apellido.trim(),
-    email: formData.email.trim().toLowerCase(),
-    username: formData.username.trim().toLowerCase(),
-    intereses: formData.intereses.join(','),
-    avatar: formData.avatar,
-    fecha_creacion: new Date().toISOString(),
+    const fecha = new Date();
+    const yyyy = fecha.getFullYear();
+    const mm = String(fecha.getMonth() + 1).padStart(2, '0');
+    const dd = String(fecha.getDate()).padStart(2, '0');
+    const fechaFormateada = `${yyyy}/${mm}/${dd}`;
+
+    let nombreApellido=`${formData.nombre.trim()} ${formData.apellido.trim()}`
+    const perfilParaGuardar = {
+      nombre: nombreApellido.trim(),
+      email: formData.email.trim().toLowerCase(),
+      username: formData.username.trim().toLowerCase(),
+      password: formData.password, // ⚠️ En texto plano por ahora (en producción usar hash)
+      descripcion: formData.descripcion.trim() || null, // Opcional
+      intereses: formData.intereses.join(','),
+      avatar: formData.avatar,
+      fecha_creacion: fechaFormateada,
+    };
+
+    console.log('📦 Datos a guardar en MySQL:', perfilParaGuardar);
+
+    // TODO: Aquí iría la llamada a tu API para guardar en MySQL
+
+    Alert.alert(
+      'Perfil creado',
+      `¡Bienvenido ${perfilParaGuardar.nombre}!`,
+      [
+        {
+          text: 'OK',
+          onPress: () => navigation.navigate('MainApp'),
+        },
+      ]
+    );
   };
 
-  console.log('📦 Datos a guardar en MySQL:', perfilParaGuardar);
+//   export const cNuevo=async(pet, resp)=>{
+//     //1: tomar contenido de los name
+//     //2: colocar esos name en el insert
+//     //3: ejecutar ese insert
+//     let nom, username, email, contra, desc, url, fecha;
+//     nom=;
+//     username=;
+//     email=;
+//     contra=;
+//     desc=;
+//     url=;
+//     fecha=;
 
-  // TODO: Aquí iría la llamada a tu API para guardar en MySQL
-
-  Alert.alert(
-    'Perfil creado',
-    `¡Bienvenido ${perfilParaGuardar.nombre}!`,
-    [
-      {
-        text: 'OK',
-        onPress: () => navigation.navigate('MainApp'), // ← CAMBIO AQUÍ
-      },
-    ]
-  );
-};
-
+//     try {
+//         let altasSQL= "INSERT INTO `usuarios`(`nombre_usuario`,`username`,`email`,`contrasena`,`descripcion`,`url_foto`,`fecha_registro`)VALUES('"+nom+"','"+username+"','"+email+"','"+contra+"','"+desc+"','"+url+"','"+fecha+"');";
+//         const [registro]=await bdd.query(altasSQL);
+//         console.log(registro);
+//     } catch (error) {
+//         console.log(`error al crear la sentencia insert ${error}`);
+//     }
+// }
   // ============================================
   // RENDER
   // ============================================
   return (
     <KeyboardAvoidingView
-      style={styles.container}
+      style={[styles.container, { backgroundColor: colores.fondo }]}
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
     >
       <ScrollView
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
       >
-        {/* Logo de MorfiApp */}
+        {/* Logo */}
         <View style={styles.logoContainer}>
           <Text style={styles.logoText}>
-            <Text style={styles.logoMorfi}>morfi</Text>
-            <Text style={styles.logoApp}>app</Text>
+            <Text style={[styles.logoMorfi, { color: colores.principal }]}>morfi</Text>
+            <Text style={[styles.logoApp, { color: colores.principal }]}>app</Text>
           </Text>
         </View>
 
         {/* Título */}
-        <Text style={styles.title}>Crear perfil</Text>
+        <Text style={[styles.title, { color: colores.texto }]}>Crear perfil</Text>
 
-        {/* Avatar con ícono de cámara */}
+        {/* Avatar */}
         <TouchableOpacity style={styles.avatarContainer}>
-          <View style={styles.avatarCircle}>
-            <Ionicons name="camera-outline" size={40} color="#999" />
+          <View style={[styles.avatarCircle, { backgroundColor: colores.bordeSuave }]}>
+            <Ionicons name="camera-outline" size={40} color={colores.textoMuted} />
           </View>
         </TouchableOpacity>
 
-        {/* Campos del formulario */}
+        {/* Formulario */}
         <View style={styles.formContainer}>
-          {/* Fila: Nombre y Apellido */}
+          {/* Nombre y Apellido */}
           <View style={styles.row}>
             <View style={styles.fieldHalf}>
-              <Text style={styles.label}>Nombre</Text>
+              <Text style={[styles.label, { color: colores.texto }]}>Nombre</Text>
               <TextInput
-                style={styles.input}
+                style={[
+                  styles.input,
+                  {
+                    backgroundColor: colores.inputFondo,
+                    borderColor: colores.inputBorde,
+                    color: colores.texto,
+                  },
+                ]}
                 value={formData.nombre}
                 onChangeText={(text) => handleChange('nombre', text)}
-                placeholder=""
-                placeholderTextColor="#ccc"
+                placeholderTextColor={colores.textoMuted}
               />
             </View>
             <View style={styles.fieldHalf}>
-              <Text style={styles.label}>Apellido</Text>
+              <Text style={[styles.label, { color: colores.texto }]}>Apellido</Text>
               <TextInput
-                style={styles.input}
+                style={[
+                  styles.input,
+                  {
+                    backgroundColor: colores.inputFondo,
+                    borderColor: colores.inputBorde,
+                    color: colores.texto,
+                  },
+                ]}
                 value={formData.apellido}
                 onChangeText={(text) => handleChange('apellido', text)}
-                placeholder=""
-                placeholderTextColor="#ccc"
+                placeholderTextColor={colores.textoMuted}
               />
             </View>
           </View>
 
           {/* Email */}
           <View style={styles.field}>
-            <Text style={styles.label}>Email</Text>
+            <Text style={[styles.label, { color: colores.texto }]}>Email</Text>
             <TextInput
-              style={styles.input}
+              style={[
+                styles.input,
+                {
+                  backgroundColor: colores.inputFondo,
+                  borderColor: colores.inputBorde,
+                  color: colores.texto,
+                },
+              ]}
               value={formData.email}
               onChangeText={(text) => handleChange('email', text)}
               keyboardType="email-address"
               autoCapitalize="none"
-              placeholder=""
-              placeholderTextColor="#ccc"
+              placeholderTextColor={colores.textoMuted}
             />
           </View>
 
           {/* Username */}
           <View style={styles.field}>
-            <Text style={styles.label}>Username</Text>
+            <Text style={[styles.label, { color: colores.texto }]}>Username</Text>
             <TextInput
-              style={styles.input}
+              style={[
+                styles.input,
+                {
+                  backgroundColor: colores.inputFondo,
+                  borderColor: colores.inputBorde,
+                  color: colores.texto,
+                },
+              ]}
               value={formData.username}
               onChangeText={(text) => handleChange('username', text)}
               autoCapitalize="none"
-              placeholder=""
-              placeholderTextColor="#ccc"
+              placeholderTextColor={colores.textoMuted}
+            />
+          </View>
+
+          {/* Contraseña (NUEVO) */}
+          <View style={styles.field}>
+            <Text style={[styles.label, { color: colores.texto }]}>Contraseña</Text>
+            <View
+              style={[
+                styles.passwordContainer,
+                {
+                  backgroundColor: colores.inputFondo,
+                  borderColor: colores.inputBorde,
+                },
+              ]}
+            >
+              <TextInput
+                style={[styles.passwordInput, { color: colores.texto }]}
+                value={formData.password}
+                onChangeText={(text) => handleChange('password', text)}
+                secureTextEntry={!mostrarPassword}
+                autoCapitalize="none"
+                autoCorrect={false}
+                placeholderTextColor={colores.textoMuted}
+              />
+              <TouchableOpacity
+                onPress={() => setMostrarPassword(!mostrarPassword)}
+                style={styles.eyeIcon}
+              >
+                <Ionicons
+                  name={mostrarPassword ? 'eye-off-outline' : 'eye-outline'}
+                  size={22}
+                  color={colores.textoMuted}
+                />
+              </TouchableOpacity>
+            </View>
+          </View>
+
+          {/* Descripción (OPCIONAL - NUEVO) */}
+          <View style={styles.field}>
+            <View style={styles.labelRow}>
+              <Text style={[styles.label, { color: colores.texto }]}>Descripción</Text>
+              <Text style={[styles.opcional, { color: colores.textoMuted }]}>
+                (opcional)
+              </Text>
+            </View>
+            <TextInput
+              style={[
+                styles.input,
+                styles.textArea,
+                {
+                  backgroundColor: colores.inputFondo,
+                  borderColor: colores.inputBorde,
+                  color: colores.texto,
+                },
+              ]}
+              value={formData.descripcion}
+              onChangeText={(text) => handleChange('descripcion', text)}
+              multiline
+              numberOfLines={3}
+              textAlignVertical="top"
+              placeholder="Contá algo sobre vos..."
+              placeholderTextColor={colores.textoMuted}
             />
           </View>
 
           {/* Intereses */}
           <View style={styles.field}>
-            <Text style={styles.label}>Intereses</Text>
+            <Text style={[styles.label, { color: colores.texto }]}>Intereses</Text>
             <View style={styles.interesesContainer}>
               {interesesDisponibles.map((interes) => {
                 const seleccionado = formData.intereses.includes(interes.name);
@@ -219,13 +343,21 @@ const CrearPerfilScreen = ({ navigation }) => {
                     key={interes.id}
                     style={[
                       styles.interesChip,
-                      seleccionado && styles.interesChipSelected,
+                      {
+                        backgroundColor: seleccionado
+                          ? colores.principal
+                          : colores.inputFondo,
+                        borderColor: seleccionado
+                          ? colores.principal
+                          : colores.inputBorde,
+                      },
                     ]}
                     onPress={() => toggleInteres(interes.name)}
                   >
                     <Text
                       style={[
                         styles.interesText,
+                        { color: seleccionado ? '#fff' : colores.texto },
                         seleccionado && styles.interesTextSelected,
                       ]}
                     >
@@ -239,7 +371,10 @@ const CrearPerfilScreen = ({ navigation }) => {
         </View>
 
         {/* Botón Guardar y continuar */}
-        <TouchableOpacity style={styles.saveButton} onPress={handleGuardar}>
+        <TouchableOpacity
+          style={[styles.saveButton, { backgroundColor: colores.principal }]}
+          onPress={handleGuardar}
+        >
           <Text style={styles.saveButtonText}>Guardar y continuar</Text>
         </TouchableOpacity>
 
@@ -250,105 +385,89 @@ const CrearPerfilScreen = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-  scrollContent: {
-    paddingHorizontal: 24,
-    paddingTop: 30,
-    paddingBottom: 20,
-  },
+  container: { flex: 1 },
+  scrollContent: { paddingHorizontal: 24, paddingTop: 30, paddingBottom: 20 },
 
   // Logo
-  logoContainer: {
-    alignItems: 'center',
-    marginBottom: 10,
-  },
-  logoText: {
-    fontSize: 42,
-    fontWeight: 'bold',
-  },
+  logoContainer: { alignItems: 'center', marginBottom: 10 },
+  logoText: { fontSize: 42, fontWeight: 'bold' },
   logoMorfi: {
-    color: `${COLOR_PRINCIPAL}`,
     fontFamily: Platform.OS === 'ios' ? 'Snell Roundhand' : 'cursive',
   },
-  logoApp: {
-    color: `${COLOR_PRINCIPAL}`,
-  },
+  logoApp: {},
 
   // Título
   title: {
     fontSize: 28,
     fontWeight: '400',
-    color: '#333',
     textAlign: 'center',
     marginBottom: 20,
     fontFamily: Platform.OS === 'ios' ? 'Georgia' : 'serif',
   },
 
   // Avatar
-  avatarContainer: {
-    alignItems: 'center',
-    marginBottom: 30,
-  },
+  avatarContainer: { alignItems: 'center', marginBottom: 30 },
   avatarCircle: {
     width: 100,
     height: 100,
     borderRadius: 50,
-    backgroundColor: '#E0E0E0',
     justifyContent: 'center',
     alignItems: 'center',
   },
 
   // Formulario
-  formContainer: {
-    marginBottom: 20,
-  },
-  row: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginBottom: 16,
-  },
-  fieldHalf: {
-    width: '48%',
-  },
-  field: {
-    marginBottom: 16,
-  },
+  formContainer: { marginBottom: 20 },
+  row: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 16 },
+  fieldHalf: { width: '48%' },
+  field: { marginBottom: 16 },
+  labelRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 6 },
   label: {
     fontSize: 18,
-    color: '#333',
     marginBottom: 6,
     fontFamily: Platform.OS === 'ios' ? 'Georgia' : 'serif',
   },
+  opcional: { fontSize: 14, marginLeft: 6, fontStyle: 'italic' },
   input: {
-    backgroundColor: '#fff',
     borderWidth: 1,
-    borderColor: '#ddd',
     borderRadius: 6,
     paddingHorizontal: 12,
     paddingVertical: 10,
     fontSize: 16,
-    color: '#333',
-    // Sombra sutil
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.1,
     shadowRadius: 2,
     elevation: 1,
   },
+  textArea: {
+    minHeight: 80,
+    paddingTop: 10,
+  },
+
+  // Contraseña
+  passwordContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderRadius: 6,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    elevation: 1,
+  },
+  passwordInput: {
+    flex: 1,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    fontSize: 16,
+  },
+  eyeIcon: { paddingHorizontal: 12 },
 
   // Intereses
-  interesesContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    marginTop: 4,
-  },
+  interesesContainer: { flexDirection: 'row', flexWrap: 'wrap', marginTop: 4 },
   interesChip: {
-    backgroundColor: '#fff',
     borderWidth: 1,
-    borderColor: '#ddd',
     borderRadius: 6,
     paddingHorizontal: 14,
     paddingVertical: 8,
@@ -360,22 +479,11 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
     elevation: 1,
   },
-  interesChipSelected: {
-    backgroundColor: COLOR_PRINCIPAL,
-    borderColor: COLOR_PRINCIPAL,
-  },
-  interesText: {
-    fontSize: 14,
-    color: '#333',
-  },
-  interesTextSelected: {
-    color: '#fff',
-    fontWeight: 'bold',
-  },
+  interesText: { fontSize: 14 },
+  interesTextSelected: { fontWeight: 'bold' },
 
   // Botón
   saveButton: {
-    backgroundColor: COLOR_PRINCIPAL,
     paddingVertical: 14,
     borderRadius: 25,
     alignItems: 'center',
@@ -386,11 +494,7 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
     elevation: 3,
   },
-  saveButtonText: {
-    color: '#fff',
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
+  saveButtonText: { color: '#fff', fontSize: 18, fontWeight: 'bold' },
 });
 
 export default CrearPerfilScreen;

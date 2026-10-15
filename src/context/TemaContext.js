@@ -2,7 +2,9 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import { guardarPreferencias, leerPreferencias } from '../servicios/almacenamiento';
 
-// Definimos los colores para cada tema
+// ============================================
+// DEFINICIÓN DE TEMAS
+// ============================================
 export const TEMAS = {
   claro: {
     // Fondos
@@ -18,7 +20,7 @@ export const TEMAS = {
     bordeSuave: '#f0f0f0',
     // Colores de la app
     principal: '#34B87F',
-    // Estados
+    // Inputs
     inputFondo: '#fff',
     inputBorde: '#ddd',
   },
@@ -36,27 +38,36 @@ export const TEMAS = {
     bordeSuave: '#2a2a2a',
     // Colores de la app
     principal: '#34B87F',
-    // Estados
+    // Inputs
     inputFondo: '#2a2a2a',
     inputBorde: '#444',
   },
 };
 
+// ============================================
+// CONTEXTO
+// ============================================
 const TemaContext = createContext();
 
+// ============================================
+// PROVIDER
+// ============================================
 export const TemaProvider = ({ children }) => {
   const [modoOscuro, setModoOscuro] = useState(false);
 
-  // Cargar preferencia guardada al iniciar
+  // Cargar preferencia guardada al iniciar la app
   useEffect(() => {
     cargarTema();
   }, []);
 
   const cargarTema = async () => {
     const guardado = await leerPreferencias('modoOscuro');
-    if (guardado !== null) setModoOscuro(guardado);
+    if (guardado !== null) {
+      setModoOscuro(guardado);
+    }
   };
 
+  // Cambiar el modo y guardarlo
   const toggleModoOscuro = async (valor) => {
     setModoOscuro(valor);
     await guardarPreferencias('modoOscuro', valor);
@@ -66,17 +77,25 @@ export const TemaProvider = ({ children }) => {
   const colores = modoOscuro ? TEMAS.oscuro : TEMAS.claro;
 
   return (
-    <TemaContext.Provider value={{ modoOscuro, toggleModoOscuro, colores }}>
+    <TemaContext.Provider
+      value={{
+        modoOscuro,
+        toggleModoOscuro,
+        colores,
+      }}
+    >
       {children}
     </TemaContext.Provider>
   );
 };
 
-// Hook personalizado para usar el tema
+// ============================================
+// HOOK PERSONALIZADO
+// ============================================
 export const useTema = () => {
   const context = useContext(TemaContext);
   if (!context) {
-    throw new Error('useTema debe usarse dentro de TemaProvider');
+    throw new Error('useTema debe usarse dentro de un TemaProvider');
   }
   return context;
 };
